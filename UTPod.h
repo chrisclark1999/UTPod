@@ -2,7 +2,7 @@
 
 #ifndef UTPOD_H
 #define UTPOD_H
-#include "Song.h"
+#include "UTPod.h"
 
 //UtPod class declaration
 class UtPod
@@ -22,6 +22,12 @@ private:
     SongNode *songs;  //the head pointer
 
     int memSize;
+
+    bool isSorted();
+
+    Song getRandom(SongNode* s);
+
+    int countSongs(SongNode* s);
 
 public:
     //Default constructor
